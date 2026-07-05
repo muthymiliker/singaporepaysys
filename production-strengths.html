@@ -1,0 +1,667 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>系统优势 | 高稳定新加坡支付系统 | PayNow支付 | 自动风控与监控</title>
+    <meta name="description" content="新加坡支付系统具备高并发处理能力、低延迟结算、多通道冗余与自动监控机制，支持PayNow支付与本地银行直连，保障交易稳定、安全与高成功率。">
+    <link href="css/iconfont.css" type="text/css" rel="stylesheet">
+    <link href="css/public.css" type="text/css" rel="stylesheet">
+    <link href="css/base-v4.1.0.min.css" type="text/css" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link href="css/media.css" type="text/css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="js/jquery.min.js"></script>
+    <style>
+        .layui-layer-loading .layui-layer-content {
+            height: 60px !important
+        }
+    </style>
+    <link href="css/swiper.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+
+<!-- body加sticky-body代表，body超出显示 -->
+
+<body>
+    <!-- ys-page-wrap加act代表导航永远反白 -->
+    <div class="ys-page-wrap inside-main act production-page">
+        <!-- 顶部导航 -->
+        <link href="css/privacy.css" type="text/css" rel="stylesheet">
+        <header class="ys-header">
+            <!-- pc顶部导航 -->
+            <div class="ys-hd-pc ">
+                <ul class="head-nav">
+                    <!-- 一级选中加act和yxnav-active1 -->
+                    <!-- li加inputbox代表有下拉样式 -->
+                    <li class="head-nav-item inputbox">
+                        <div class="head-nav-item-nub">
+                            <a href="/" target="_self" class="head-nav-item-title">
+                                <div class="hnit-text">首页</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="head-nav-item inputbox">
+                        <div class="head-nav-item-nub">
+                            <a href="brand-introduction.html" target="_self" class="head-nav-item-title">
+                                <div class="hnit-text">关于我们</div>
+                            </a>
+                            <!-- 下拉 -->
+                        </div>
+                    </li>
+                    <li class="head-nav-item  yxnav-active1 act">
+                        <div class="head-nav-item-nub">
+                            <a href="runpin-seiko.html" target="_self" class="head-nav-item-title">
+                                <div class="hnit-text">新加坡支付</div>
+                                <div class="hnit-img ys-imgbox-cover">
+                                    <img src="picture/navjt1.svg" alt="新加坡支付" class="mob-jty" loading="lazy">
+                                    <img src="picture/navjt.svg" alt="新加坡支付" class="mob-jtw" loading="lazy">
+                                </div>
+                            </a>
+                            <!-- 下拉 -->
+                            <div class="head-nav-item-down">
+                                <ul class="hnid-ul">
+                                    <li class="hnid-ul-li ">
+                                        <a href="runpin-seiko.html" target="_self" class="hnid-ul-li-link">
+                                            <div class="hull-text std-text16">
+                                                新加坡PayNow支付</div>
+                                            <div class="hull-img">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewbox="0 0 16 16" fill="none">
+                                                    <path d="M3.33337 8H12.6667" stroke="#fff" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="mod-path2"></path>
+                                                    <path d="M8 3.33333L12.6667 8L8 12.6667" stroke="#fff"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        class="mod-path2"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hnid-ul-li ">
+                                        <a href="runpin-craft.html" target="_self" class="hnid-ul-li-link">
+                                            <div class="hull-text std-text16">
+                                                新加坡电子钱包支付</div>
+                                            <div class="hull-img">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewbox="0 0 16 16" fill="none">
+                                                    <path d="M3.33337 8H12.6667" stroke="#fff" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="mod-path2"></path>
+                                                    <path d="M8 3.33333L12.6667 8L8 12.6667" stroke="#fff"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        class="mod-path2"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hnid-ul-li ">
+                                        <a href="runpin-domestic.html" target="_self" class="hnid-ul-li-link">
+                                            <div class="hull-text std-text16">
+                                                新加坡网银支付</div>
+                                            <div class="hull-img">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewbox="0 0 16 16" fill="none">
+                                                    <path d="M3.33337 8H12.6667" stroke="#fff" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="mod-path2"></path>
+                                                    <path d="M8 3.33333L12.6667 8L8 12.6667" stroke="#fff"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        class="mod-path2"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="head-nav-item  inputbox">
+                        <div class="head-nav-item-nub">
+                            <a href="production-strengths.html" target="_self" class="head-nav-item-title">
+                                <div class="hnit-text">系统优势</div>
+                                <div class="hnit-img ys-imgbox-cover">
+                                    <img src="picture/navjt1.svg" alt="系统优势" class="mob-jty" loading="lazy">
+                                    <img src="picture/navjt.svg" alt="系统优势" class="mob-jtw" loading="lazy">
+                                </div>
+                            </a>
+                            <!-- 下拉 -->
+                            <div class="head-nav-item-down">
+                                <ul class="hnid-ul">
+                                    <li class="hnid-ul-li ">
+                                        <a href="production-strengths.html" target="_self" class="hnid-ul-li-link">
+                                            <div class="hull-text std-text16">
+                                                自研监控软件</div>
+                                            <div class="hull-img">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewbox="0 0 16 16" fill="none">
+                                                    <path d="M3.33337 8H12.6667" stroke="#fff" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="mod-path2"></path>
+                                                    <path d="M8 3.33333L12.6667 8L8 12.6667" stroke="#fff"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        class="mod-path2"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hnid-ul-li ">
+                                        <a href="production-strengths.html" target="_self" class="hnid-ul-li-link">
+                                            <div class="hull-text std-text16">
+                                                跨境支付与结算</div>
+                                            <div class="hull-img">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewbox="0 0 16 16" fill="none">
+                                                    <path d="M3.33337 8H12.6667" stroke="#fff" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="mod-path2"></path>
+                                                    <path d="M8 3.33333L12.6667 8L8 12.6667" stroke="#fff"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        class="mod-path2"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hnid-ul-li ">
+                                        <a href="production-strengths.html" target="_self" class="hnid-ul-li-link">
+                                            <div class="hull-text std-text16">
+                                                API驱动开放</div>
+                                            <div class="hull-img">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewbox="0 0 16 16" fill="none">
+                                                    <path d="M3.33337 8H12.6667" stroke="#fff" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="mod-path2"></path>
+                                                    <path d="M8 3.33333L12.6667 8L8 12.6667" stroke="#fff"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        class="mod-path2"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hnid-ul-li ">
+                                        <a href="production-strengths.html" target="_self" class="hnid-ul-li-link">
+                                            <div class="hull-text std-text16">
+                                                多商户管理体系</div>
+                                            <div class="hull-img">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewbox="0 0 16 16" fill="none">
+                                                    <path d="M3.33337 8H12.6667" stroke="#fff" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="mod-path2"></path>
+                                                    <path d="M8 3.33333L12.6667 8L8 12.6667" stroke="#fff"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        class="mod-path2"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hnid-ul-li ">
+                                        <a href="production-strengths.html" target="_self" class="hnid-ul-li-link">
+                                            <div class="hull-text std-text16">
+                                                订单管理机器人</div>
+                                            <div class="hull-img">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewbox="0 0 16 16" fill="none">
+                                                    <path d="M3.33337 8H12.6667" stroke="#fff" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="mod-path2"></path>
+                                                    <path d="M8 3.33333L12.6667 8L8 12.6667" stroke="#fff"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        class="mod-path2"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="head-nav-item  inputbox">
+                        <div class="head-nav-item-nub">
+                            <a href="news.html" target="_self" class="head-nav-item-title">
+                                <div class="hnit-text">支付新闻</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="head-nav-item  inputbox">
+                        <div class="head-nav-item-nub">
+                            <a href="https://t.me/ukpaysys" target="_blank" rel="nofollow" class="head-nav-item-title">
+                                <div class="hnit-text">联系飞机</div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="head-logo ys-imgbox-contain">
+                    <a href="/">
+                        <img src="picture/logo.png" alt="新加坡支付系统搭建开发出租" loading="lazy">
+                    </a>
+                </div>
+                <div class="head-other">
+                    <div class="head-hotl">
+                        <a href="tel:0755-25501398" title="" class="head-hotl-link" rel="noopenner noreferrer">
+                            <div class="std-text16">TG:@ukpaysys</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header> <!-- 主体内容 -->
+        <main class="ys-main">
+            <!-- page start -->
+            <!-- 内容区 -->
+            <section class="production-adv brandinro-bg std-padding150all">
+                <!-- 面包屑 -->
+                <div class="mod-bread">
+                    <div class="ys-cont1440">
+                        <div class="std-text14">您的位置：</div>
+                        <ul class="ys-bread ys-flex-center">
+                            <li class="ys-bread-list">
+                                <a href="/">首页</a>
+                            </li>
+                            <li class="ys-bread-list">
+                                <a href="production-strengths.html" target="">系统优势</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ys-cont1440">
+                    <div class="newslist-ny-top">
+                        <h1 class="std-font44 wow ys-fadeup2">配套自研监控软件</h1>
+                        <div class="brandinro-top-line wow"></div>
+                    </div>
+                    <div class="production-adv-info">
+                        <div class="production-adv-info-le wow ys-fadeup3">
+                            <div class="ys-imgbox-cover">
+                                <img src="picture/B2img01.png" alt="配套自研监控软件" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="production-adv-info-ri">
+                            <div class="pair-cry std-font20 wow ys-fadeup3">
+                                <p>系统配套自研监控软件，具备全链路交易实时监测能力，可对支付请求发起、路由处理、回调通知、订单状态流转以及最终资金结果进行持续追踪与多维度分析，
+                                    形成完整的交易生命周期可视化监控体系。</p><br>
+                                <p>在交易运行过程中，系统能够对关键节点进行毫秒级或秒级级别的数据采集与状态比对，一旦发现延迟异常、回调失败、状态不一致或交易波动异常等情况，
+                                    监控系统将自动触发记录与告警机制，对异常订单进行标记、归档与日志留存，便于技术团队快速定位问题根因并进行修复与优化，
+                                    从而显著提升系统整体的稳定性与可维护性。</p><br>
+                                    <p>同时，该监控软件集成多渠道通知能力，支持短信到账通知、App推送到账通知以及电子邮件通知等多种方式，可根据业务需求灵活配置通知策略，
+                                        实现关键交易状态的即时触达。运营与技术团队能够第一时间掌握订单变化与资金流转情况，有效减少信息滞后带来的运营风险。</p><br>
+                                        <p>通过实时监控与多维告警机制的结合，该系统不仅提升了交易透明度与可观测性，也增强了整体风控能力与异常响应效率，为高并发、
+                                            大流量的支付业务场景提供稳定、可靠且可持续扩展的技术保障。</p>
+                            </div>
+                            <div class="pair-bg wow ys-fadeup4">
+                                <img src="picture/b2_icon01.svg" alt="配套自研监控软件" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="production-adv brandinro-bg std-padding150all">
+                <div class="ys-cont1440">
+                    <div class="newslist-ny-top">
+                        <h1 class="std-font44 wow ys-fadeup2">支持跨境支付和结算</h1>
+                        <div class="brandinro-top-line wow"></div>
+                    </div>
+                    <div class="production-adv-info">
+                        <div class="production-adv-info-le wow ys-fadeup3">
+                            <img src="picture/B2img02.png" alt="支持跨境支付和结算" loading="lazy">
+                        </div>
+                        <div class="production-adv-info-ri">
+                            <div class="pair-cry std-font20 wow ys-fadeup3">
+                                <p>系统具备强大的跨境支付与结算能力，构建了覆盖多地区、多币种、多渠道的全球化支付处理架构，可支持不同国家与地区之间的高效资金流转与统一清算管理。
+                                    通过对接全球主流国际支付网络以及本地化支付渠道，系统能够灵活适配各区域金融基础设施差异，实现企业在全球市场中的统一收款与付款能力。</p><br>
+                                <p>在多币种处理方面，系统支持多种法定货币及主流结算币种的实时转换与资金归集，能够根据汇率机制与清算规则自动完成交易拆分、汇兑处理与资金结算，
+                                    从而降低跨境资金流动中的汇率风险与人工处理成本。同时，系统具备完善的资金路由能力，可根据地区、渠道稳定性及成本策略智能选择最优支付路径，
+                                    提升整体交易成功率与资金使用效率。</p><br>
+                                    <p>依托稳定且高可用的支付基础设施，系统支持自营三方模式与四方运营两种模式，可根据业务场景灵活配置：自营三方模式适用于有自己的账户，
+                                        而四方运营则更适用于没有自己的收款账户，有效平衡资金周转效率与系统处理压力。</p><br>
+                                        <p>此外，系统在跨境资金安全具备完善的风控与监控机制，可对交易过程、资金流向及清算结果进行全流程追踪与审计记录，确保每一笔资金流转清晰可查、可控可追溯。</p>
+                            </div>
+                            <div class="pair-bg wow ys-fadeup4">
+                                <img src="picture/b2_icon01.svg" alt="支持跨境支付和结算" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="production-adv brandinro-bg std-padding150all">
+                <div class="ys-cont1440">
+                    <div class="newslist-ny-top">
+                        <h1 class="std-font44 wow ys-fadeup2">支持API驱动开放</h1>
+                        <div class="brandinro-top-line wow"></div>
+                    </div>
+                    <div class="production-adv-info">
+                        <div class="production-adv-info-le wow ys-fadeup3">
+                            <img src="picture/B2img03.png" alt="支持API驱动开放" loading="lazy">
+                        </div>
+                        <div class="production-adv-info-ri">
+                            <div class="pair-cry std-font20 wow ys-fadeup3">
+                                <p>系统采用API驱动的开放式架构设计，以标准化、模块化和服务化为核心理念，构建高度灵活且可扩展的支付能力中台。通过统一的API网关与接口规范，
+                                    系统可实现与银行系统、电子钱包、第三方支付渠道以及本地清算机构的快速对接，从而打通多种支付资源与金融服务能力，形成一体化的支付生态接入体系。</p><br>
+                                <p>在接口设计层面，系统提供结构清晰、规范统一的标准化API能力，覆盖收款、付款、退款、订单查询、交易状态同步以及对账管理等核心支付功能。
+                                    开发者或企业系统仅需通过简单的接口调用，即可完成完整支付链路的集成，大幅降低技术接入门槛与开发复杂度。同时，
+                                    系统支持多种数据格式与安全认证机制（如签名验证、加密传输与权限控制），确保接口调用过程安全可靠。</p><br>
+                                    <p>在扩展能力方面，系统采用松耦合架构设计，各支付渠道与业务模块独立运行，可根据业务需求灵活启用或扩展新的支付方式与服务能力，
+                                        无需对核心系统进行大规模改造。这种架构模式不仅提升了系统的可维护性，也显著增强了对新市场、新渠道的适配能力，
+                                        使企业能够快速响应不同地区的支付生态变化。</p><br>
+                                        <p>依托这一API驱动的开放式架构，企业不仅能够快速构建稳定、安全、高性能的支付服务体系，还能够持续扩展支付能力边界，
+                                            实现从单一支付功能向全球化支付基础设施的演进与升级，从而更好地支撑业务增长与国际化发展需求。</p>
+                            </div>
+                            <div class="pair-bg wow ys-fadeup4">
+                                <img src="picture/b2_icon01.svg" alt="支持API驱动开放" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="production-adv brandinro-bg std-padding150all">
+                <div class="ys-cont1440">
+                    <div class="newslist-ny-top">
+                        <h1 class="std-font44 wow ys-fadeup2">采用多商户管理体系</h1>
+                        <div class="brandinro-top-line wow"></div>
+                    </div>
+                    <div class="production-adv-info">
+                        <div class="production-adv-info-le wow ys-fadeup3">
+                            <img src="picture/B2img04.png" alt="采用多商户管理体系"  loading="lazy">
+                        </div>
+                        <div class="production-adv-info-ri">
+                            <div class="pair-cry std-font20 wow ys-fadeup3">
+                                <p>采用完善的多商户管理体系，系统为平台型业务提供了一套结构清晰、层级分明且高度可配置的商户管理能力，支持对多个商户主体进行统一接入、
+                                    集中管理与分级运营控制，从而满足复杂商业生态下的多角色、多业务、多资金流并行处理需求。</p><br>
+                                <p>在账户管理层面，系统实现了严格的账户隔离机制，不同商户之间的数据、资金与交易信息完全独立，确保业务边界清晰、安全性可控。
+                                    同时支持独立结算体系设计，每个商户可根据其业务属性单独配置结算账户、资金归集方式与清算规则，有效保障资金流转的独立性与透明性。</p><br>
+                                    <p>在权限管理方面，系统支持精细化的角色与权限控制体系，可针对平台管理员、运营人员、商户负责人及子账户等不同角色进行权限划分，实现功能访问、
+                                        数据查看及操作范围的多级管控，进一步提升系统安全性与运营规范性。</p><br>
+                                        <p>同时，系统支持高度灵活的参数化配置能力，平台可针对不同商户灵活设置费率结构、手续费规则、结算周期（如T+0、T+1或自定义周期）、
+                                            支付渠道权重以及风控策略等，实现差异化运营与精细化商业管理，从而适配不同规模与行业类型的业务需求。</p>
+                            </div>
+                            <div class="pair-bg wow ys-fadeup4">
+                                <img src="picture/b2_icon01.svg" alt="采用多商户管理体系" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="production-adv brandinro-bg std-padding150all">
+                <div class="ys-cont1440">
+                    <div class="newslist-ny-top">
+                        <h1 class="std-font44 wow ys-fadeup2">支持订单管理机器人</h1>
+                        <div class="brandinro-top-line wow"></div>
+                    </div>
+                    <div class="production-adv-info">
+                        <div class="production-adv-info-le wow ys-fadeup3">
+                            <img src="picture/B2img05.png" alt="支持订单管理机器人"  loading="lazy">
+                        </div>
+                        <div class="production-adv-info-ri">
+                            <div class="pair-cry std-font20 wow ys-fadeup3">
+                                <p>系统内置订单管理机器人，可自动处理订单查询、状态同步与异常订单识别，实现支付流程的智能化管理。当出现回调延迟或订单异常时，
+                                    系统可自动触发补单与状态修复机制，减少人工干预。</p>
+                                <p>同时，该机器人支持多规则配置与定时任务处理，可对海量订单进行高效归类与管理，显著提升运营效率与准确性，
+                                    保障支付系统在高并发场景下依然稳定运行。</p>
+                            </div>
+                            <div class="pair-bg wow ys-fadeup4">
+                                <img src="picture/b2_icon01.svg" alt="支持订单管理机器人" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- page end -->
+        </main>
+        <!-- 页脚 -->
+        <footer class="ys-footer">
+            <div class="ys-cont1440">
+                <div class="footer-top">
+                    <div class="footer-top-le">
+                        <div class="std-font24">新加坡支付系统搭建</div>
+                    </div>
+                    <ul class="footer-nav">
+                        <li>
+                            <a href="/">首页</a>
+                        </li>
+                        <li>
+                            <a href="brand-introduction.html">关于我们</a>
+                            <ul>
+                                <li><a>✅全自研程序，安全稳定</a></li>
+                                <li><a>✅搭建到运营，全程护航</a></li>
+                                <li><a>✅一站式服务，无搭建费</a></li>
+                                <li><a>✅搭建加推广，合作共赢</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="runpin-seiko.html">新加坡支付</a>
+                            <ul>
+                                <li><a href="runpin-seiko.html">新加坡PayNow支付</a></li>
+                                <li><a href="runpin-craft.html">新加坡电子钱包支付</a></li>
+                                <li><a href="runpin-domestic.html">新加坡网银支付</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="production-strengths.html">系统优势</a>
+                            <ul>
+                                <li><a href="production-strengths.html">自研监控软件</a></li>
+                                <li><a href="production-strengths.html">跨境支付与结算</a></li>
+                                <li><a href="production-strengths.html">API驱动开放</a></li>
+                                <li><a href="production-strengths.html">多商户管理体系</a></li>
+                                <li><a href="production-strengths.html">订单管理机器人</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- 侧边 -->
+    <div class="page-side">
+        <ul class="page-side-list">
+            <li class="page-side-list-li">
+                <div class="psll-link">
+                    <div class="psll-link-img">
+                        <img src="picture/comicon12.png" alt="联系我们" loading="lazy">
+                    </div>
+                    <div class="psll-cry">
+                        <div class="psll-cry-ri">
+                            <a href="https://t.me/ukpaysys" target="_blank" rel="nofollow">
+                                @ukpaysys</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="page-side-top">
+            <div class="ys-imgbox-cover">
+                <img src="picture/b1bgpc01.png" alt="新加坡支付系统搭建开发出租" loading="lazy">
+                <img src="picture/com_icon09.svg" alt="新加坡支付系统搭建开发出租" loading="lazy">
+            </div>
+        </div>
+    </div> <!-- public start -->
+    <script>
+        window.onload = function () {
+            dataStatistics("/Cn/Index/dataStatistics?&catid=8");
+        }
+    </script><!-- public start -->
+    <script src="js/public.js"></script>
+    <script src="js/base-v4.1.0.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <script type="text/javascript" src="js/Yongsy.js"></script>
+    <script type="text/javascript" src="js/layer.js"></script>
+    <!-- public end --> <!-- public end -->
+    <script src="js/swiper.min.js"></script>
+    <script>
+        $(function () {
+            navfollFun();
+            mapFun();
+            paraFun();
+            domiFun();
+            numtallFun();
+            hovenavFun();
+            ceFun();
+        })
+        //导航默认选中
+        function hovenavFun() {
+            $(".hnid-ul-li").hover(
+                function () {
+                    $(".hnid-ul-li.yxnav-active2").removeClass("on");
+                },
+                function () {
+                    $(".hnid-ul-li.yxnav-active2").addClass("on");
+                }
+            );
+        }
+        // 侧边
+        function ceFun() {
+            if ($(window).width() > 1199) {
+                $(".page-side-list-li").hover(function () {
+                    $(this).find(".psll-cry").stop().fadeIn();
+                }, function () {
+                    $(this).find(".psll-cry").stop().fadeOut();
+                });
+            } else {
+                $(".page-side-list-li").click(function (e) {
+                    e.stopPropagation();
+                    $(this).parents('li').find(".psll-cry").slideToggle();
+                });
+                $('html,body').click(function () {
+                    $(".psll-cry").stop().fadeOut();
+                });
+                $(".psll-cry").click(function (e) {
+                    e.stopPropagation();
+                });
+            }
+        }
+        // 侧边
+        $('.page-side-top').click(function () {
+            ys.goTop(500, 0);
+        })
+        //导航跟随
+        function navfollFun() {
+            var $header = $('.ys-hd-pc');
+            var lastScroll = 0;
+            var scrollThreshold = 50;
+            $header.removeClass('hide');
+            $(window).scroll(function () {
+                var currentScroll = $(this).scrollTop();
+                if (currentScroll <= 0) {
+                    $header.removeClass('hide');
+                    return;
+                }
+                if (Math.abs(currentScroll - lastScroll) < scrollThreshold) {
+                    return;
+                }
+                if (currentScroll > lastScroll && !$header.hasClass('hide')) {
+                    $header.addClass('hide');
+                } else if (currentScroll < lastScroll && $header.hasClass('hide')) {
+                    $header.removeClass('hide');
+                }
+                lastScroll = currentScroll;
+            });
+        }
+        //地图点位
+        function mapFun() {
+            if (window.innerWidth > 1199) {
+                $(".pbml-li").hover(function () {
+                    $(this).addClass("act").siblings().removeClass("act")
+                }, function () {
+                    $(this).removeClass("act")
+                })
+            } else if (window.innerWidth > 767) {
+                $(".pbml-li").click(function () {
+                    $(this).toggleClass("act").siblings().removeClass("act");
+                })
+            }
+        }
+        // 视差
+        function paraFun() {
+            if (window.innerWidth > 1199) {
+                var introdChange = gsap.timeline();
+                introdChange.to(".hiti-cry-paraimg ", {
+                    top: -210,
+                    ease: "none",
+                })
+                ScrollTrigger.create({
+                    animation: introdChange,
+                    trigger: ".production-adv",
+                    start: "top top",
+                    end: "bottom top",
+                    scrub: 1,
+                    // markers: true,
+                    immediateRender: false,
+                });
+            }
+        }
+        // 数说
+        function numtallFun() {
+            if (window.innerWidth < 768) {
+                var mySwiper = new Swiper('.production-num-container', {
+                    loop: false,
+                    spaceBetween: 20,
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                    pagination: {
+                        el: '.production-num-container .swiper-pagination',
+                        type: 'bullets',
+                        clickable: true,
+                    },
+                });
+                if ($(window).width() >= 768) {
+                    if ($('.production-num-container .swiper-slide').length <= 2) {
+                        swiper_remove('.production-num-container');
+                    }
+                } else {
+                    if ($('.production-num-container .swiper-slide').length <= 1) {
+                        swiper_remove('.production-num-container');
+                    }
+                }
+                // 数据不足，去除控件
+                function swiper_remove(ele1) {
+                    $(ele1).find('.swiper-pagination').remove();
+                }
+                $('.production-num-container').appear(function () {
+                    mySwiper.autoplay.start();
+                })
+            }
+        }
+
+        function domiFun() {
+            if (window.innerWidth < 768) {
+                var mySwiper3 = new Swiper('.production-domi-swiper', {
+                    loop: false,
+                    spaceBetween: 0,
+                    slidesPerView: 2,
+                    slidesPerGroup: 1,
+                    pagination: {
+                        el: '.production-domi-swiper .swiper-pagination',
+                        type: 'bullets',
+                        clickable: true,
+                    },
+                });
+                if ($(window).width() >= 768) {
+                    if ($('.production-domi-swiper .swiper-slide').length <= 2) {
+                        swiper_remove('.production-domi-swiper');
+                    }
+                } else {
+                    if ($('.production-domi-swiper .swiper-slide').length <= 1) {
+                        swiper_remove('.production-domi-swiper');
+                    }
+                }
+                // 数据不足，去除控件
+                function swiper_remove(ele1) {
+                    $(ele1).find('.swiper-pagination').remove();
+                }
+                $('.production-domi-swiper').appear(function () {
+                    mySwiper3.autoplay.start();
+                })
+            }
+        }
+        // start
+        $(".pbml-li").click(function () {
+            var index = $(this).index();
+            $(this).addClass("act").siblings().removeClass("act");
+            var self = this;
+            setTimeout(() => {
+                $(self).addClass("act");
+            }, 50);
+
+            $(".production-base-ph-tab").eq(index).stop().fadeIn().siblings().stop().hide();
+        });
+        // end
+    </script>
+    <a style="display:none;" data-href="https://smalltool.github.io/">仿站小工具官网</a>
+</body>
+
+</html>

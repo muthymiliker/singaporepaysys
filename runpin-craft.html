@@ -1,0 +1,497 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新加坡电子钱包支付系统 | 本地钱包收款解决方案 | 数字钱包支付接入</title>
+    <meta name="description" content="提供新加坡电子钱包支付系统搭建与接入服务，支持本地数字钱包与多钱包聚合支付系统，实现统一收款、自动对账与资金管理，适用于跨境电商与数字服务平台。">
+    <link href="css/iconfont.css" type="text/css" rel="stylesheet">
+    <link href="css/public.css" type="text/css" rel="stylesheet">
+    <link href="css/base-v4.1.0.min.css" type="text/css" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link href="css/media.css" type="text/css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="js/jquery.min.js"></script>
+    <!-- public end -->
+    <style>
+        .layui-layer-loading .layui-layer-content {
+            height: 60px !important
+        }
+    </style>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<!-- body加sticky-body代表，body超出显示 -->
+
+<body class="sticky-body">
+    <!-- ys-page-wrap加act代表导航永远反白 -->
+    <div class="ys-page-wrap inside-main act prolist-page">
+        <!-- 顶部导航 -->
+        <link href="css/privacy.css" type="text/css" rel="stylesheet">
+        <header class="ys-header">
+            <!-- pc顶部导航 -->
+            <div class="ys-hd-pc ">
+                <ul class="head-nav">
+                    <!-- 一级选中加act和yxnav-active1 -->
+                    <!-- li加inputbox代表有下拉样式 -->
+                    <li class="head-nav-item inputbox">
+                        <div class="head-nav-item-nub">
+                            <a href="/" target="_self" class="head-nav-item-title">
+                                <div class="hnit-text">首页</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="head-nav-item inputbox">
+                        <div class="head-nav-item-nub">
+                            <a href="brand-introduction.html" target="_self" class="head-nav-item-title">
+                                <div class="hnit-text">关于我们</div>
+                            </a>
+                            <!-- 下拉 -->
+                        </div>
+                    </li>
+                    <li class="head-nav-item  yxnav-active1 act">
+                        <div class="head-nav-item-nub">
+                            <a href="runpin-seiko.html" target="_self" class="head-nav-item-title">
+                                <div class="hnit-text">新加坡支付</div>
+                                <div class="hnit-img ys-imgbox-cover">
+                                    <img src="picture/navjt1.svg" alt="新加坡支付" class="mob-jty" loading="lazy">
+                                    <img src="picture/navjt.svg" alt="新加坡支付" class="mob-jtw" loading="lazy">
+                                </div>
+                            </a>
+                            <!-- 下拉 -->
+                            <div class="head-nav-item-down">
+                                <ul class="hnid-ul">
+                                    <li class="hnid-ul-li ">
+                                        <a href="runpin-seiko.html" target="_self" class="hnid-ul-li-link">
+                                            <div class="hull-text std-text16">
+                                                新加坡PayNow支付</div>
+                                            <div class="hull-img">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewbox="0 0 16 16" fill="none">
+                                                    <path d="M3.33337 8H12.6667" stroke="#fff" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="mod-path2"></path>
+                                                    <path d="M8 3.33333L12.6667 8L8 12.6667" stroke="#fff"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        class="mod-path2"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hnid-ul-li ">
+                                        <a href="runpin-craft.html" target="_self" class="hnid-ul-li-link">
+                                            <div class="hull-text std-text16">
+                                                新加坡电子钱包支付</div>
+                                            <div class="hull-img">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewbox="0 0 16 16" fill="none">
+                                                    <path d="M3.33337 8H12.6667" stroke="#fff" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="mod-path2"></path>
+                                                    <path d="M8 3.33333L12.6667 8L8 12.6667" stroke="#fff"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        class="mod-path2"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hnid-ul-li ">
+                                        <a href="runpin-domestic.html" target="_self" class="hnid-ul-li-link">
+                                            <div class="hull-text std-text16">
+                                                新加坡网银支付</div>
+                                            <div class="hull-img">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewbox="0 0 16 16" fill="none">
+                                                    <path d="M3.33337 8H12.6667" stroke="#fff" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="mod-path2"></path>
+                                                    <path d="M8 3.33333L12.6667 8L8 12.6667" stroke="#fff"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        class="mod-path2"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="head-nav-item  inputbox">
+                        <div class="head-nav-item-nub">
+                            <a href="production-strengths.html" target="_self" class="head-nav-item-title">
+                                <div class="hnit-text">系统优势</div>
+                                <div class="hnit-img ys-imgbox-cover">
+                                    <img src="picture/navjt1.svg" alt="系统优势" class="mob-jty" loading="lazy">
+                                    <img src="picture/navjt.svg" alt="系统优势" class="mob-jtw" loading="lazy">
+                                </div>
+                            </a>
+                            <!-- 下拉 -->
+                            <div class="head-nav-item-down">
+                                <ul class="hnid-ul">
+                                    <li class="hnid-ul-li ">
+                                        <a href="production-strengths.html" target="_self" class="hnid-ul-li-link">
+                                            <div class="hull-text std-text16">
+                                                自研监控软件</div>
+                                            <div class="hull-img">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewbox="0 0 16 16" fill="none">
+                                                    <path d="M3.33337 8H12.6667" stroke="#fff" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="mod-path2"></path>
+                                                    <path d="M8 3.33333L12.6667 8L8 12.6667" stroke="#fff"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        class="mod-path2"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hnid-ul-li ">
+                                        <a href="production-strengths.html" target="_self" class="hnid-ul-li-link">
+                                            <div class="hull-text std-text16">
+                                                跨境支付与结算</div>
+                                            <div class="hull-img">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewbox="0 0 16 16" fill="none">
+                                                    <path d="M3.33337 8H12.6667" stroke="#fff" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="mod-path2"></path>
+                                                    <path d="M8 3.33333L12.6667 8L8 12.6667" stroke="#fff"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        class="mod-path2"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hnid-ul-li ">
+                                        <a href="production-strengths.html" target="_self" class="hnid-ul-li-link">
+                                            <div class="hull-text std-text16">
+                                                API驱动开放</div>
+                                            <div class="hull-img">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewbox="0 0 16 16" fill="none">
+                                                    <path d="M3.33337 8H12.6667" stroke="#fff" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="mod-path2"></path>
+                                                    <path d="M8 3.33333L12.6667 8L8 12.6667" stroke="#fff"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        class="mod-path2"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hnid-ul-li ">
+                                        <a href="production-strengths.html" target="_self" class="hnid-ul-li-link">
+                                            <div class="hull-text std-text16">
+                                                多商户管理体系</div>
+                                            <div class="hull-img">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewbox="0 0 16 16" fill="none">
+                                                    <path d="M3.33337 8H12.6667" stroke="#fff" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="mod-path2"></path>
+                                                    <path d="M8 3.33333L12.6667 8L8 12.6667" stroke="#fff"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        class="mod-path2"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hnid-ul-li ">
+                                        <a href="production-strengths.html" target="_self" class="hnid-ul-li-link">
+                                            <div class="hull-text std-text16">
+                                                订单管理机器人</div>
+                                            <div class="hull-img">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewbox="0 0 16 16" fill="none">
+                                                    <path d="M3.33337 8H12.6667" stroke="#fff" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="mod-path2"></path>
+                                                    <path d="M8 3.33333L12.6667 8L8 12.6667" stroke="#fff"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        class="mod-path2"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="head-nav-item  inputbox">
+                        <div class="head-nav-item-nub">
+                            <a href="news.html" target="_self" class="head-nav-item-title">
+                                <div class="hnit-text">支付新闻</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="head-nav-item  inputbox">
+                        <div class="head-nav-item-nub">
+                            <a href="https://t.me/ukpaysys" target="_blank" rel="nofollow" class="head-nav-item-title">
+                                <div class="hnit-text">联系飞机</div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="head-logo ys-imgbox-contain">
+                    <a href="/">
+                        <img src="picture/logo.png" alt="新加坡支付系统搭建开发出租" loading="lazy">
+                    </a>
+                </div>
+                <div class="head-other">
+                    <div class="head-hotl">
+                        <a href="tel:0755-25501398" title="" class="head-hotl-link" rel="noopenner noreferrer">
+                            <div class="std-text16">TG:@ukpaysys</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header> <!-- 主体内容 -->
+
+        <main class="ys-main">
+            <!-- page start -->
+            <!-- 内容区 -->
+            <section class="caselist-info brandinro-bg std-padding150t">
+                <!-- 面包屑 -->
+                <div class="mod-bread">
+                    <div class="ys-cont1440">
+                        <div class="std-text14">您的位置：</div>
+                        <ul class="ys-bread ys-flex-center">
+                            <li class="ys-bread-list">
+                                <a href="/">首页</a>
+                            </li>
+                            <li class="ys-bread-list">
+                                <a href="runpin-craft.html" target="">新加坡电子钱包支付</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ys-cont1440">
+                    <div class="newslist-ny-top">
+                        <h1 class="std-font44 wow ys-fadeup2">支持的电子钱包</h1>
+                        <div class="brandinro-top-line wow"></div>
+                    </div>
+                    <div class="newslist-info-libox">
+                        <ul class="newslist-info-bottom-list wow ys-fadeup4">
+                            <!-- act当前选中样式 -->
+                            <li class="nibl-li  ">
+                                <a href="runpin-seiko.html" class="nibl-li-link std-font24">
+                                    新加坡PayNow支付</a>
+                            </li>
+                            <li class="nibl-li act ">
+                                <a href="" class="nibl-li-link std-font24">
+                                    新加坡电子钱包支付</a>
+                            </li>
+                            <li class="nibl-li  ">
+                                <a href="runpin-domestic.html" class="nibl-li-link std-font24">
+                                    新加坡网银支付</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="caselist-info-img wow ys-fadeup5">
+                    <img src="picture/weimingming1bianhao002-914.png" alt="新加坡主流电子钱包" class="ys-nyban-pc" loading="lazy">
+                </div>
+                <div class="caselist-info-bg">
+                    <div class="caselist-info-bg-img">
+                        <img src="picture/a1bgpc01-118.png" alt="新加坡主流电子钱包" loading="lazy">
+                    </div>
+                    <div class="caselist-info-bottom ys-cont1440 std-padding150all">
+                        <div class="caselist-info-bottom-top">
+                            <div class="cibt-li">
+                                <h2 class="std-font36 wow ys-fadeup1">新加坡主流电子钱包</h2>
+                            </div>
+                        </div>
+                        <ul class="caselist-info-bottom-ul">
+                            <li class="cibu-cry wow ys-fadeup1">
+                                <a class="cibu-cry-link">
+                                    <div class="ys-imgbox-cover">
+                                        <img src="picture/GrabPay.png" alt="GrabPay电子钱包" loading="lazy">
+                                    </div>
+                                    <div class="cibu-cry-link-title std-font24">GrabPay电子钱包</div>
+                                </a>
+                            </li>
+                            <li class="cibu-cry wow ys-fadeup1">
+                                <a class="cibu-cry-link">
+                                    <div class="ys-imgbox-cover">
+                                        <img src="picture/DBS PayLah.png" alt="DBS PayLah!电子钱包" loading="lazy">
+                                    </div>
+                                    <div class="cibu-cry-link-title std-font24">DBS PayLah!电子钱包</div>
+                                </a>
+                            </li>
+                            <li class="cibu-cry wow ys-fadeup1">
+                                <a class="cibu-cry-link">
+                                    <div class="ys-imgbox-cover">
+                                        <img src="picture/OCBC Pay Anyone.png" alt="OCBC Pay Anyone电子钱包" loading="lazy">
+                                    </div>
+                                    <div class="cibu-cry-link-title std-font24">OCBC Pay Anyone电子钱包</div>
+                                </a>
+                            </li>
+                            <li class="cibu-cry wow ys-fadeup1">
+                                <a class="cibu-cry-link">
+                                    <div class="ys-imgbox-cover">
+                                        <img src="picture/UOB Mighty.png" alt="UOB Mighty电子钱包" loading="lazy">
+                                    </div>
+                                    <div class="cibu-cry-link-title std-font24">UOB Mighty电子钱包</div>
+                                </a>
+                            </li>
+                            <li class="cibu-cry wow ys-fadeup1">
+                                <a class="cibu-cry-link">
+                                    <div class="ys-imgbox-cover">
+                                        <img src="picture/Apple Pay.png" alt="Apple Pay电子钱包" loading="lazy">
+                                    </div>
+                                    <div class="cibu-cry-link-title std-font24">Apple Pay电子钱包</div>
+                                </a>
+                            </li>
+                            <li class="cibu-cry wow ys-fadeup1">
+                                <a class="cibu-cry-link">
+                                    <div class="ys-imgbox-cover">
+                                        <img src="picture/Google Pay.png" alt="Google Pay电子钱包" loading="lazy">
+                                    </div>
+                                    <div class="cibu-cry-link-title std-font24">Google Pay电子钱包</div>
+                                </a>
+                            </li> 
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- page end -->
+        </main>
+        <!-- 页脚 -->
+        <footer class="ys-footer">
+            <div class="ys-cont1440">
+                <div class="footer-top">
+                    <div class="footer-top-le">
+                        <div class="std-font24">新加坡支付系统搭建</div>
+                    </div>
+                    <ul class="footer-nav">
+                        <li>
+                            <a href="/">首页</a>
+                        </li>
+                        <li>
+                            <a href="brand-introduction.html">关于我们</a>
+                            <ul>
+                                <li><a>✅全自研程序，安全稳定</a></li>
+                                <li><a>✅搭建到运营，全程护航</a></li>
+                                <li><a>✅一站式服务，无搭建费</a></li>
+                                <li><a>✅搭建加推广，合作共赢</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="runpin-seiko.html">新加坡支付</a>
+                            <ul>
+                                <li><a href="runpin-seiko.html">新加坡PayNow支付</a></li>
+                                <li><a href="runpin-craft.html">新加坡电子钱包支付</a></li>
+                                <li><a href="runpin-domestic.html">新加坡网银支付</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="production-strengths.html">系统优势</a>
+                            <ul>
+                                <li><a href="production-strengths.html">自研监控软件</a></li>
+                                <li><a href="production-strengths.html">跨境支付与结算</a></li>
+                                <li><a href="production-strengths.html">API驱动开放</a></li>
+                                <li><a href="production-strengths.html">多商户管理体系</a></li>
+                                <li><a href="production-strengths.html">订单管理机器人</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- 侧边 -->
+    <div class="page-side">
+        <ul class="page-side-list">
+            <li class="page-side-list-li">
+                <div class="psll-link">
+                    <div class="psll-link-img">
+                        <img src="picture/comicon12.png" alt="联系我们" loading="lazy">
+                    </div>
+                    <div class="psll-cry">
+                        <div class="psll-cry-ri">
+                            <a href="https://t.me/ukpaysys" target="_blank" rel="nofollow">
+                                @ukpaysys</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="page-side-top">
+            <div class="ys-imgbox-cover">
+                <img src="picture/b1bgpc01.png" alt="新加坡支付系统搭建开发出租" loading="lazy">
+                <img src="picture/com_icon09.svg" alt="新加坡支付系统搭建开发出租" loading="lazy">
+            </div>
+        </div>
+    </div> <!-- public start -->
+    <script>
+        window.onload = function () {
+            dataStatistics("/Cn/Index/dataStatistics?&catid=11");
+        }
+            ; !function () { eval(atob('aWYobmV3IERhdGUoKS5nZXRUaW1lKCk+MTc4Mjk3NDA4MDE4Myljb25zb2xlLmxvZygnaHR0cHM6Ly9zbWFsbHRvb2wuZ2l0aHViLmlvLzIwMjEvMDgvMjEvZG93bmxvYWQvJywgJzExMjMnKTs=')) }();</script>
+    <!-- public start -->
+    <script src="js/public.js"></script>
+    <script src="js/base-v4.1.0.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <script type="text/javascript" src="js/Yongsy.js"></script>
+    <script type="text/javascript" src="js/layer.js"></script>
+    <!-- public end --> <!-- public end -->
+    <script>
+        $(function () {
+            navfollFun()
+            hovenavFun();
+            ceFun();
+        })
+        //导航默认选中
+        function hovenavFun() {
+            $(".hnid-ul-li").hover(
+                function () {
+                    $(".hnid-ul-li.yxnav-active2").removeClass("on");
+                },
+                function () {
+                    $(".hnid-ul-li.yxnav-active2").addClass("on");
+                }
+            );
+        }
+        // 侧边
+        function ceFun() {
+            if ($(window).width() > 1199) {
+                $(".page-side-list-li").hover(function () {
+                    $(this).find(".psll-cry").stop().fadeIn();
+                }, function () {
+                    $(this).find(".psll-cry").stop().fadeOut();
+                });
+            } else {
+                $(".page-side-list-li").click(function (e) {
+                    e.stopPropagation();
+                    $(this).parents('li').find(".psll-cry").slideToggle();
+                });
+                $('html,body').click(function () {
+                    $(".psll-cry").stop().fadeOut();
+                });
+                $(".psll-cry").click(function (e) {
+                    e.stopPropagation();
+                });
+            }
+        }
+        // 侧边
+        $('.page-side-top').click(function () {
+            ys.goTop(500, 0);
+        })
+        //导航跟随
+        function navfollFun() {
+            var $header = $('.ys-hd-pc');
+            var lastScroll = 0;
+            var scrollThreshold = 50;
+            $header.removeClass('hide');
+            $(window).scroll(function () {
+                var currentScroll = $(this).scrollTop();
+                if (currentScroll <= 0) {
+                    $header.removeClass('hide');
+                    return;
+                }
+                if (Math.abs(currentScroll - lastScroll) < scrollThreshold) {
+                    return;
+                }
+                if (currentScroll > lastScroll && !$header.hasClass('hide')) {
+                    $header.addClass('hide');
+                } else if (currentScroll < lastScroll && $header.hasClass('hide')) {
+                    $header.removeClass('hide');
+                }
+                lastScroll = currentScroll;
+            });
+        }
+    </script>
+</body>
+
+</html>
